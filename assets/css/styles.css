@@ -3,9 +3,16 @@
 }
 
 .card {
+    display: inline-block;
     width: 10em;
     height: 10em;
     background-color: #9f9f9f;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 1px black; 
+    box-sizing: border-box;
 }
 /* Colors */
 /* Cards */
@@ -13,42 +20,42 @@
 .red {
     background-color: red;
 }
-.red {
+.blue {
     background-color: blue;
 }
-.red {
+.green {
     background-color: green;
 }
-.red {
+.yellow {
     background-color: yellow;
 }
-.red {
+.orange {
     background-color: orange;
 }
-.red {
+.tan {
     background-color: tan;
 }
-.red {
+.cyan {
     background-color: cyan;
 }
-.red {
+.pink {
     background-color: pink;
 }
-.red {
+.purple {
     background-color: purple;
 }
-.red {
+.magenta {
     background-color: magenta;
 }
 .red {
     background-color: greenyellow;
 }
-.red {
+.gold {
     background-color: gold;
 }
-.red {
+.black {
     background-color: black;
 }
-.red {
+.brown {
     background-color: brown;
 }
