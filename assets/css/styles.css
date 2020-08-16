@@ -85,6 +85,8 @@
     margin-top: 3em;
 }
 
+/* easiest */
+
 .easiest {
     cursor: pointer;
     transition: .5s ease;
@@ -93,6 +95,17 @@
 .easiest:hover {
     filter:brightness(0.8)
 }
+
+.card-easiest {
+    display: inline-block;
+    width: 12;
+    height: 16vh;
+    background-color: #9f9f9f;
+    cursor: pointer;
+}
+
+
+/* easy */
 
 .easy {
     cursor: pointer;
@@ -103,6 +116,17 @@
     filter:brightness(0.8)
 }
 
+.card-easy {
+    display: inline-block;
+    width: 6vw;
+    height: 8vh;
+    background-color: #9f9f9f;
+    cursor: pointer;
+}
+
+
+/* normal */
+
 .normal {
     cursor: pointer;
     transition: .5s ease;
@@ -112,6 +136,15 @@
     filter:brightness(0.8)
 }
 
+.card-normal {
+    display: inline-block;
+    width: 6vw;
+    height: 8vh;
+    background-color: #9f9f9f;
+    cursor: pointer;
+}
+
+/* hard */
 .hard {
     cursor: pointer;
     transition: .5s ease;
@@ -121,17 +154,33 @@
     filter:brightness(0.8)
 }
 
-.card {
-    display: inline-block;
-    width: 10em;
-    height: 10em;
-    background-color: #9f9f9f;
-    cursor: pointer;
+.hard-grid {
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-rows: auto;
+    height: 70vh;
+    text-align: center;
+    margin: auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
 }
 
-.card:hover {
-    box-shadow: 0 0 0 1px black; 
-    box-sizing: border-box;
+.card-hard {
+    background-color: #9f9f9f;
+    cursor: pointer;
+    border-radius: 5% 
+}
+
+.card-hard:hover {
+    filter:brightness(0.8)
+}
+
+.card-hard.match {
+    cursor: not-allowed;
+}
+
+.card-hard.match:hover {
+    filter: none;
 }
 /* Colors */
 body {
@@ -169,7 +218,7 @@ body {
 .magenta {
     background-color: magenta;
 }
-.red {
+.greenyellow {
     background-color: greenyellow;
 }
 .gold {
@@ -181,3 +230,11 @@ body {
 .brown {
     background-color: brown;
 }
+/*----------------------------------- Media queries --------------------------------------- */
+
+@media screen and (max-width: 900px) {
+
+@media screen and (orientation: portrait) and (max-width: 900px) {
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+.video-frame {
