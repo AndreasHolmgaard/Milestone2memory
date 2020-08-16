@@ -160,7 +160,7 @@
     grid-template-rows: auto;
     height: 70vh;
     text-align: center;
-    margin: auto;
+    margin: 10vh 0 10vh 0;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
 }
@@ -224,11 +224,34 @@ body {
 .gold {
     background-color: gold;
 }
-.black {
-    background-color: black;
+.peachpuff {
+    background-color: peachpuff;
 }
 .brown {
     background-color: brown;
+}
+
+.white{
+     background-color: white;
+}
+.silver{
+     background-color: silver;
+}
+.cornflowerblue {
+     background-color: cornflowerblue;
+}
+.cadetblue{
+     background-color: cadetblue;
+}
+.chartreuse{
+     background-color: chartreuse;
+}
+.rosybrown{
+     background-color: rosybrown;
+}
+
+.hidden {
+    background-color: gray;
 }
 /*----------------------------------- Media queries --------------------------------------- */
 
