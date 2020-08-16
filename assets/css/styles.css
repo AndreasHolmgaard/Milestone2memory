@@ -15,7 +15,7 @@
 }
 
 .memegame {
-    background-image: url(..assets/images/One-Does-Not-Simply.jpg);
+    background-image: url(../images/One-Does-Not-Simply.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -48,7 +48,7 @@
 }
 
 .colorgame {
-    background-image: url(..assets/images/Ancient-Aliens.jpg);
+    background-image: url(../images/Ancient-Aliens.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
