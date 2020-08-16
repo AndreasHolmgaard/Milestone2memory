@@ -4,6 +4,8 @@ let preventClick = false;
 let combosFound = 0;
 let attempts = 0;
 
+/* Colors to be shuffled */
+
 const colors = [
     'red',
     'blue',
@@ -27,7 +29,7 @@ const colors = [
     'rosybrown'
 ];
 
-/* generate random colors */
+/* designate random colors */
 
 const cards = Array.from(document.querySelectorAll(".card-hard"));
 
@@ -45,20 +47,19 @@ for (let color of colors) {
     cardB.setAttribute("data-color", color)
 }
 
+/* reveal card on click */ 
 
 function onCardClicked(e) {
     const target = e.currentTarget;
+    const pairs = Array.from(document.querySelectorAll(".card"));
 
     if (
-        preventClick ||
-        target === clickedCard || target.className.includes("match")
+        preventClick || target === clickedCard || target.className.includes("match")
     ) {
         return;
     }
 
-    target.className = target.className
-        .replace("hidden", "")
-        .trim();
+    target.className = target.className.replace("hidden", "").trim();
     target.className += " match";
 
     if (!clickedCard) {
@@ -66,7 +67,7 @@ function onCardClicked(e) {
         clickedCard = target;
     } else if (clickedCard) {
         attempts++;
-        document.write(attempts)
+        document.getElementById("counter").innerHTML = attempts;
         // if we have clicked a card , check if it matches the first card.
         if (
             clickedCard.getAttribute("data-color") !==
@@ -82,9 +83,10 @@ function onCardClicked(e) {
             }, 500);
         }
         else {
+            document.getElementById("counter").innerHTML = attempts;
             combosFound++;
             clickedCard = null;
-            if (combosFound === colors.length) {
+            if (combosFound === pairs.length * 0.5) {
                 alert('YOU WIN!');
             }
         }
