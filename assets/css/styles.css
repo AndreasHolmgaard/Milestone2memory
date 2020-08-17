@@ -1,6 +1,6 @@
 /* navigation */
-.dropdown-toggle::after {
-    display: none;
+body {
+    height: 100vh
 }
 
 /* game choices */
@@ -104,24 +104,6 @@
     grid-row-gap: 2px;
 }
 
-.easiest {
-    cursor: pointer;
-    transition: .5s ease;
-}
-
-.easiest:hover {
-    filter:brightness(0.8)
-}
-
-.card-easiest {
-    display: inline-block;
-    width: 12;
-    height: 16vh;
-    background-color: #9f9f9f;
-    cursor: pointer;
-}
-
-
 /* easy */
 
 .easy-grid {
@@ -134,24 +116,6 @@
     grid-column-gap: 2px;
     grid-row-gap: 2px;
 }
-
-.easy {
-    cursor: pointer;
-    transition: .5s ease;
-}
-
-.easy:hover {
-    filter:brightness(0.8)
-}
-
-.card-easy {
-    display: inline-block;
-    width: 6vw;
-    height: 8vh;
-    background-color: #9f9f9f;
-    cursor: pointer;
-}
-
 
 /* normal */
 
@@ -166,33 +130,7 @@
     grid-row-gap: 2px;
 }
 
-.normal {
-    cursor: pointer;
-    transition: .5s ease;
-}
-
-.normal:hover {
-    filter:brightness(0.8)
-}
-
-.card-normal {
-    display: inline-block;
-    width: 6vw;
-    height: 8vh;
-    background-color: #9f9f9f;
-    cursor: pointer;
-}
-
 /* hard */
-.hard {
-    cursor: pointer;
-    transition: .5s ease;
-}
-
-.hard:hover {
-    filter:brightness(0.8)
-}
-
 .hard-grid {
     display: grid;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
@@ -204,21 +142,21 @@
     grid-row-gap: 2px;
 }
 
-.card-hard {
+.card {
     background-color: #9f9f9f;
     cursor: pointer;
     border-radius: 5% 
 }
 
-.card-hard:hover {
+.card:hover {
     filter:brightness(0.8)
 }
 
-.card-hard.match {
+.card.match {
     cursor: not-allowed;
 }
 
-.card-hard.match:hover {
+.card.match:hover {
     filter: none;
 }
 /* Colors */
@@ -290,6 +228,10 @@ body {
 }
 
 .hidden {
+    background-image: url() !important;
+}
+
+.hidden-color {
     background-color: gray;
 }
 /*----------------------------------- Media queries --------------------------------------- */
