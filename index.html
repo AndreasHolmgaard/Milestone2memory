@@ -16,35 +16,40 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="index.html">MeMeory Games</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav">
-				<li>
-				<a class="nav-link" href="difficulty-color.html">Colored Cards memory</a>
-			    </li>
-                <li>
-                <a class="nav-link" href="difficulty-memes.html">MeMeory</a>
-                </li>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="dropdown-item" href="difficulty-memes.html">MeMeory</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="difficulty-color.html">Colered Cards memory</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
-	<div class="container choose-game">
-		<div class="row">
+    <div class="welcome">
+	<div class="choose-game">
 			<div class="memegame col-md">
 				<a class="memegame-button btn btn-success" href="difficulty-memes.html">memegame</a>
 			</div>
 			<div class="colorgame col-md">
 				<a class="colorgame-button btn btn-success" href="difficulty-color.html">colorgame</a>
 			</div>
-		</div>
-		<div class="row two">
+		<div>
 			<div class="memegame-button col-md"></div>
 			<div class="colorgame-button col-md"></div>
 		</div>
 	</div>
+   </div>
+    <div class="welcome-text">
+    Welcome to MeMemory games, here you can play classic memery games. Choose between colored cards or cards with meme images.
+    obviously the game with meme images is the proper Memeory game, the other is just a memory game. Have fun and enjoy the meme pictures!
+    </div>
 	<script type="text/javascript" src="assets/js/main.js"></script>
+    <footer>imageflip</footer>
 </body>
-<footer>imageflip</footer>
-
 </html>
