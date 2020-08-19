@@ -1,39 +1,80 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# MeMeory
 
-Welcome AndreasHolmgaard,
+- This i a website for play memory games with Meme cards hence MeMeory. The idea is that the Memes on the cards should contribute to the enjoyment of the game.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## USER EXPERIENCE
+- This is page for anyone who want to keep their memory sharp and who wants to see the latest memes aswell.
+The api from imageflip.com provides the most popular memes. Therefore you can train yuor memory and see which memes are trending.
 
-## Gitpod Reminders
+- A memory game is just a basic tool to help train yuor brain to remember patterns.
+The api from imageflip provies fresh memes, by picking up the most popular memes from imageflip.com.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- You can check out the wireframe here.
+https://www.figma.com/file/574gdpZ7AaPCvkadNU5jZy/Milestone-project-1
 
-`python3 -m http.server`
+## Features
+- Two game modes. One with colored cards if you just want to train your memory and get scammed by the near identical colors.
+Another features the most popular memes at imageflip.com. So far it is only the pictures.
 
-A blue button should appear to click: *Make Public*,
+- Four difficulties ranging from 12 cards to 40.
 
-Another blue button should appear to click: *Open Browser*.
+- A counter to keep track of how many attempts you need to finish the memory games.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Zoom for the meme cards.
 
-A blue button should appear to click: *Make Public*,
+## Features Left to Implement
+- Auto generated text for the memecards. This could result in some redicilous memes.
+- Two player game mode.
+- A proper win screen and effect.
+- background music.
 
-Another blue button should appear to click: *Open Browser*.
+## Technologies Used
+- HTML 5. Basic framework for website creation. https://en.wikipedia.org/wiki/HTML5
+- CSS 3. For styling HTML. https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+- Bootstrap. For libriaries making responsive styling easier. https://getbootstrap.com/
+- Fontawesome. For icons. https://fontawesome.com/
+- Googlefonts. For fonts. https://fonts.google.com/specimen/Exo
+- Figma was used for wireframes. It made it simple to create and overview of how everything could look like.
+- JavaScript for game functionnality and getting api.
+- JQuery
+The project uses JQuery to simplify DOM manipulation.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+## Testing
+- I have had some of my friends try out the memory games. 
 
-## Updates Since The Instructional Video
+- Using the following websites I weeded out erros in my code. I kept my comments as they are even though the html validator warned about the extra hyphens.
+https://validator.w3.org/nu/
+The css validator claims that my code has 32 errors. All 32 recognised errors are in the Bootstrap library.
+https://jigsaw.w3.org/css-validator/
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+https://andreasholmgaard.github.io/Milestone2memory/
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Go to the validator pages and paste in the Milestone2memory website url.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- I have opened the website on my desktop, and my phone to find out if there are any responsiveness problems.
+The trickiest part was the landscape orientation for the mobile format.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- The biggest difference between smaller bigger screens is the grid. If the screen becomes too narrow the grid will change to better fit. 
+Portrait and landscape of a phone have the grid following the longest side.
+The grid takes up more space on mobile, otherwise the pictures would be mush too small.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Deployment
+I deployed using GitHub Pages with the current branch.
 
---------
+There are no differences between the development and the deployment at the moment.
 
-Happy coding!
+To run the code locally in gitpod type "python3 -m http.server" in the console.
+
+## Credits
+Content
+copied and modified code from https://github.com/codyseibert/youtube/blob/master/html-memory/index.js.
+No text paragraphs were copied.
+
+## Media
+- The photos used in this site were obtained from imageflip.com
+
+## Acknowledgements
+- Thanks to codyseibert for making a cool tutorial for a memory game in JavaScript.
+- https://css-tricks.com/
+- https://www.w3schools.com/
+- Various memory games and memorygame tutorials.
