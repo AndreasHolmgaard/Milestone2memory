@@ -34,7 +34,7 @@ footer {
 /* game choices */
 
 .choose-game {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-columns: 40vw 40vw;
     width: 80vw;
@@ -112,6 +112,23 @@ footer {
     width: 90%;
 }
 
+.easiest:hover {
+    filter: opacity(0.8);
+}
+
+.easy:hover {
+    filter: opacity(0.8);
+}
+
+.normal:hover {
+    filter: opacity(0.8);
+}
+
+.hard:hover {
+    filter: opacity(0.8);
+}
+
+
 /* game elements */
 
 #counter {
@@ -133,6 +150,13 @@ footer {
     margin: 5vw 10vw 2vh 10vw;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
+}
+
+.easiest-background {
+    background-image: (url(../images/memesquire.jpg));
+    height: 100vh;
+    width: 100vw;    
+    background-repeat: repeat;
 }
 
 /* easy */
@@ -177,7 +201,9 @@ footer {
     background-color: #9f9f9f;
     cursor: pointer;
     border-radius: 5%;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5 ease
 }
 
 .card:hover {

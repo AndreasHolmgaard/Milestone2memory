@@ -69,7 +69,7 @@ function onCardClicked(e) {
     } else if (clickedCard) {
         // once two cards are clicked a counter goes up by 1.
         attempts++;
-        document.getElementById("counter").innerHTML = attempts + "attempts";
+        document.getElementById("counter").innerHTML = "Number of attempts " + attempts;
         // if we have clicked a card , check if it matches the first card.
         if (
             clickedCard.getAttribute("data-color") !==
@@ -86,10 +86,9 @@ function onCardClicked(e) {
             }, 500);
         } else {
             // keep track of number of combos and win condition
-            document.getElementById("counter").innerHTML = attempts;
             combosFound++;
             clickedCard = null;
-            if (combosFound === pairs.length * 0.5) {
+            if (combosFound * 2 === pairs.length) {
                 alert("YOU WIN!");
             }
         }
